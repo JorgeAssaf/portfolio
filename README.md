@@ -8,4 +8,4 @@ This is my web portfolio, here you can find information about me, my skills, my 
 
 If you want to see it use this url: https://jorgeassaf.netlify.app/
 
-Thank
+I would appreciate a star 🌟😊
