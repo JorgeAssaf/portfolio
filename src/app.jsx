@@ -34,8 +34,8 @@ export function App() {
 
   return (
     <>
-      <div className='bg-white dark:bg-slate-900 min-h-screen font-inter text-white lg:[zoom:1.2] ult:[zoom:2.5] '>
-        <div className=' max-w-9xl w-11/12 mx-auto py-5'>
+      <div className='bg-white dark:bg-slate-900 min-h-screen font-inter text-white lg:[zoom:1.2] ult:[zoom:2.5] 5k:[zoom:4] '>
+        <div className=' max-w-9xl w-8/12 mx-auto py-5 sm:w-11/12 md:w-10/12'>
           <Navbar
             name={logo}
             handleThemeSwitch={handleThemeSwitch}
