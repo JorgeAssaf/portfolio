@@ -51,7 +51,7 @@ const Navbar = ({ name, handleThemeSwitch, theme }) => {
         onClick={handleNav}
         className={
           nav
-            ? 'transition absolute text-indigo-500  left-0 top-0 w-full bg-gray-800 max-h-screen  flex flex-col mx-auto py-5 px-3'
+            ? 'transition absolute text-indigo-500  left-0 top-0 w-full bg-gray-800 max-h-screen  flex flex-col mx-auto py-5 px-[0.83rem]'
             : ' transition absolute left-[-100%]'
         }
       >
