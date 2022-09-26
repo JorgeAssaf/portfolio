@@ -19,12 +19,12 @@ const HeroBanner = () => {
             className='mt-3 md:font-normal md:text-base sm:text-[0.85rem]'
           >
             {' '}
-            <span className='text-xl'>¿Quién soy? 🤔</span>
+            <span className='text-lg text-indigo-300 '>¿Quién soy? 🤔</span>
             <p className='mt-3'>
               Soy Jorge Assaf, un desarrollador Web enfocado en el Front-end UI
-              y UX. Durante este año he estado apacionado por aprender
-              Javascript, React, Next, Astro tambien un monton de otras
-              herramientas con el fin de lograr mi objetivo de ser programador
+              y UX. Durante este añome he apacionado por aprender
+              Javascript, React, Next, Astro junto con un monton de otras
+              herramientas y tecnologias con el fin de lograr mi objetivo de ser programador
               FullStack 👨‍💻
             </p>
           </p>
@@ -40,7 +40,7 @@ const HeroBanner = () => {
         <a
           data-aos='fade-up-left'
           className=' font-[500] mt-10 mx-0 text-base mb-6 py-3 px-8 bg-gradient-to-r from-indigo-500 via-indigo-600 to-indigo-700 rounded-lg hover:from-indigo-800 hover:to-indigo-800'
-          href='../assets/docs/Jorge_Assaf_CV.pdf'
+          href='https://files.fm/down.php?i=vvuw9dxbr'
           download='Cv_Assaf.pdf'
         >
           Descarga mi CV

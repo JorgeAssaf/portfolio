@@ -1,6 +1,7 @@
 import { useState } from 'preact/hooks'
 import { AiOutlineClose } from 'react-icons/ai'
 import { HiOutlineMenuAlt4 } from 'react-icons/hi'
+
 const Navbar = ({ name, handleThemeSwitch, theme }) => {
   const [nav, setNav] = useState(false)
   const [logo, setLogo] = useState(false)
@@ -11,12 +12,12 @@ const Navbar = ({ name, handleThemeSwitch, theme }) => {
   return (
     <div
       data-aos='fade-down'
-      className=' md:text-4xl mb-20 text-indigo-700 font-medium dark:text-indigo-500 '
+      className=' md:text-4xl mb-16 text-indigo-700 font-medium dark:text-indigo-500  '
     >
       <nav>
-        <header className='flex flex-row items-center justify-between '>
+        <header className='flex flex-row items-center justify-between  '>
           <h2 className=' text-3xl'>{name}</h2>
-          <ul className='md:flex text-lg gap-5 list-none sm:hidden  '>
+          <ul className='md:flex text-lg gap-4 list-none sm:hidden  '>
             <li>
               <a href='#'>Home</a>
             </li>
@@ -29,6 +30,8 @@ const Navbar = ({ name, handleThemeSwitch, theme }) => {
             <li>
               <a href='#contactame'>Contactame</a>
             </li>
+            {/* //Todo Hacer la Internalización */}
+            {/* <li>🇪🇸</li> */}
             <li
               onClick={handleThemeSwitch}
               className=' bg-indigo-500 rounded-lg px-0.5 py-0.5 cursor-pointer  '
@@ -51,7 +54,7 @@ const Navbar = ({ name, handleThemeSwitch, theme }) => {
         onClick={handleNav}
         className={
           nav
-            ? 'transition absolute text-indigo-500  left-0 top-0 w-full bg-gray-800 max-h-screen  flex flex-col mx-auto py-5 px-[0.83rem]'
+            ? 'transition absolute text-indigo-500  left-0 top-0 w-full bg-gray-800 max-h-screen  flex flex-col mx-auto py-5 sm:px-[1.36rem]'
             : ' transition absolute left-[-100%]'
         }
       >
@@ -69,6 +72,8 @@ const Navbar = ({ name, handleThemeSwitch, theme }) => {
           <li className='mb-4'>
             <a href='#contactame'>Contactame</a>
           </li>
+          {/* //Todo Hacer la Internalización */}
+          {/* <li className='mb-4'>🇪🇸</li> */}
           <li
             onClick={handleThemeSwitch}
             className=' bg-indigo-500 rounded-lg px-0.5 py-0.5 cursor-pointer mb-5 '
