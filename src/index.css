@@ -8,10 +8,6 @@
 	* {
 		font-family: 'Poppins', sans-serif;
 	}
-	img {
-		height: 100%;
-		width: 100%;
-	}
 	::-webkit-scrollbar {
 		width: 10px; /* Tamaño del scroll en vertical */
 		height: 10px;
