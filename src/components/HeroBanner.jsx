@@ -22,7 +22,7 @@ const HeroBanner = () => {
             <span className='text-lg text-indigo-300 '>¿Quién soy? 🤔</span>
             <p className='mt-3'>
               Soy Jorge Assaf, un desarrollador Web enfocado en el Front-end UI
-              y UX. Durante este añome he apacionado por aprender
+              y UX. Durante este año me he apacionado por aprender
               Javascript, React, Next, Astro junto con un monton de otras
               herramientas y tecnologias con el fin de lograr mi objetivo de ser programador
               FullStack 👨‍💻
