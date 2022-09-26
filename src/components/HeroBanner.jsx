@@ -31,7 +31,7 @@ const HeroBanner = () => {
         </article>
         <img
           data-aos='fade-up'
-          className='md:[borderRadius:1rem] sm:[borderRadius:50%] sm:w-60 sm:mx-auto sm:mt-6 md:mt-0 md:w-[13rem] md:h-[13rem] lg:w-64 lg:h-64 md:mx-20'
+          className='md:[borderRadius:1rem] sm:[borderRadius:50%] sm:w-60 sm:mx-auto w-auto h-auto sm:mt-6 md:mt-0 md:w-[13rem] md:h-[13rem] lg:w-64 lg:h-64 md:mx-20'
           src='https://avatars.githubusercontent.com/u/83357738?s=400&u=63446e9c21c765eefc5b0c7ef879302a015ac70f&v=4'
           alt='Jorge'
         />
