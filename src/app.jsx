@@ -7,10 +7,16 @@ import {
   Proyects,
   Technologies,
 } from './components'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
+AOS.init({
+  delay: 100,
+})
 
 export function App() {
   const logo = '<Assaf />'
-  const [theme, setTheme] = useState(null)
+  const [theme, setTheme] = useState('dark')
 
   useEffect(() => {
     if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
@@ -42,6 +48,7 @@ export function App() {
             theme={theme}
           />
           <HeroBanner />
+          <h2 className='text-4xl mb-6 flex justify-center'>Cooming soon!!!</h2>
           <Proyects />
           <Technologies />
           <Contact />
