@@ -54,12 +54,12 @@ const Navbar = ({ name, handleThemeSwitch, theme }) => {
         onClick={handleNav}
         className={
           nav
-            ? 'transition absolute text-indigo-500  left-0 top-0 w-full bg-gray-800 max-h-screen  flex flex-col mx-auto py-5 sm:px-[1.36rem]'
-            : ' transition absolute left-[-100%]'
+            ? 'transition absolute text-indigo-500 left-0 top-0 w-full bg-gray-800 max-h-screen flex flex-col mx-auto py-5 sm:px-[1.36rem]'
+            : 'transition absolute left-[-100%]'
         }
       >
         <h2 className='text-3xl mb-7'>{name}</h2>
-        <ul className='text-center  text-white'>
+        <ul className='text-center text-white'>
           <li className='mb-4'>
             <a href='#'>Home</a>
           </li>

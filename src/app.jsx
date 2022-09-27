@@ -4,7 +4,7 @@ import {
   Footer,
   HeroBanner,
   Navbar,
-  Proyects,
+  Projects,
   Technologies,
 } from './components'
 import AOS from 'aos'
@@ -48,8 +48,8 @@ export function App() {
             theme={theme}
           />
           <HeroBanner />
-          <h2 className='text-4xl mb-6 flex justify-center'>Cooming soon!!!</h2>
-          <Proyects />
+          {/* <h2 className='text-4xl mb-6 flex justify-center'>Cooming soon!!!</h2> */}
+          <Projects />
           <Technologies />
           <Contact />
           <Footer />
