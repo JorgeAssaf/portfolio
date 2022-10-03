@@ -1,0 +1,6 @@
+export { default as SassIcon } from './Icons/sass.svg'
+export { default as ReactIcon } from './Icons/react.svg'
+export { default as AstroIcon } from './Icons/astro.svg'
+export { default as JavascriptIcon } from './Icons/js.svg'
+// export { default as TestIcon } from 'Icons/test.svg'
+// export { default as ViteIcon } from 'Icons/vite.svg'
