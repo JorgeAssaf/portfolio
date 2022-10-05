@@ -1,6 +1,6 @@
 # My Portfolio
 
-![Logo](https://i.postimg.cc/hGCGk1L1/Demo.png)
+![Logo](https://i.postimg.cc/SQfsHS7s/demo.png)
 
 ## Description
 
