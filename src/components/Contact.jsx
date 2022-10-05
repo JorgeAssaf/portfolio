@@ -4,7 +4,7 @@ import toast, { Toaster } from 'react-hot-toast'
 const Contact = () => {
   const form = useRef()
 
-  const sendEmail = (e, message) => {
+  const sendEmail = e => {
     e.preventDefault()
 
     emailjs
@@ -34,11 +34,14 @@ const Contact = () => {
           })
         }
       )
+    e.target.reset()
   }
-  // e.target.reset()
 
   return (
-    <div id='contactame' className='my-7 mx-auto rounded-md bg-slate-800  font-medium text-white dark:bg-slate-800 dark:text-indigo-500 md:w-full lg:w-9/12  '>
+    <div
+      id='contactame'
+      className='my-7 mx-auto rounded-md bg-slate-800  font-medium text-white dark:bg-slate-800 dark:text-indigo-500 md:w-full lg:w-9/12  '
+    >
       <Toaster position='top-right' reverseOrder={false} />
       <form
         ref={form}
