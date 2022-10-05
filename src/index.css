@@ -5,16 +5,18 @@
 @tailwind utilities;
 
 @layer base {
-	* {
-		font-family: 'Poppins', sans-serif;
-	}
-	::-webkit-scrollbar {
-		width: 10px; /* Tamaño del scroll en vertical */
-		height: 10px;
-		background: #6366f1;
-	}
-	::-webkit-scrollbar-thumb {
-		background: #4338ca;
-		border-radius: 5px;
-	}
+  * {
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px; /* Tamaño del scroll en vertical */
+    height: 10px;
+    background: #6366f1;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #4338ca;
+    border-radius: 5px;
+  }
 }
