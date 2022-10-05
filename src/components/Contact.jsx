@@ -4,7 +4,7 @@ import toast, { Toaster } from 'react-hot-toast'
 const Contact = () => {
   const form = useRef()
 
-  const sendEmail = e => {
+  const sendEmail = (e) => {
     e.preventDefault()
 
     emailjs
@@ -95,7 +95,6 @@ const Contact = () => {
           <button
             type='submit'
             value='Enviar'
-            onClick={sendEmail}
             className='focus:shadow-outline  rounded-md bg-indigo-500 py-3 px-6 text-lg text-white focus:outline-none  sm:text-sm md:text-base'
           >
             Enviar
