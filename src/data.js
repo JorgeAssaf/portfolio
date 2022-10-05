@@ -13,7 +13,7 @@ export const projects = [
     id: 1,
     title: 'Potfolio v1',
     img: 'https://i.postimg.cc/SQfsHS7s/demo.png',
-    description: 'Aplicacion que consume la api de Gifhy',
+    description: 'Este es la primera version de mi portafolio web 👌🏼🌟',
     technologies: ['Preact', 'Tailwindcss'],
     repo: 'https://github.com/JorgeAssaf/portfolio',
     demo: 'https://jorgeassaf.netlify.app/'
