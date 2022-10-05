@@ -5,12 +5,12 @@ module.exports = {
   theme: {
     screens: {
       sm: '250px',
-      md: '700px',
+      md: '660px',
       lg: '1000px',
       ult: '2540px',
-      '5k': '5000px',
+      '5k': '5000px'
     },
-    extend: {},
+    extend: {}
   },
-  plugins: [],
+  plugins: []
 }
