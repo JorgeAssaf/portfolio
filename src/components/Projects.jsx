@@ -1,51 +1,83 @@
 import { projects } from '../data'
-import { FaGithub } from 'react-icons/fa'
+import { FaGithub, FaInternetExplorer } from 'react-icons/fa'
 const Projects = () => {
   return (
     <main>
-      <h2 className='text-4xl my-7 flex justify-center text-indigo-700 font-medium dark:text-indigo-500 '>Proyectos</h2>
-      <div className='md:grid grid-cols-2 md: gap-10 md:w-9/12 mx-auto  sm:flex sm:flex-col '>
-        {projects.map(({ id, title, description, technologies, img }) => {
-          return (
-            <section
-              className=' dark:bg-slate-800 bg-slate-900 pb-5  rounded-md '
-              key={id}
-            >
-              <img
-                className='object-cover w-full mx-auto mb-3 rounded-t-md'
-                src={img}
-                alt={title}
-              />
-              <h3 className='text-center mb-4 text-2xl text-indigo-500 font-medium '>
-                {title}
-              </h3>
-              <p className='mx-4 mb-4 text-base text-gray-200'>
-                {description}
-              </p>
+      <h2 id='proyectos' className='my-7 flex justify-center text-4xl font-medium text-indigo-700 dark:text-indigo-500  '>
+        Proyectos
+      </h2>
+      <div className='grid-cols-2 gap-5 sm:mx-auto sm:flex sm:w-9/12 sm:flex-col md:mx-auto md:grid md:w-11/12 lg:w-9/12'>
+        {projects.map(
+          ({ id, title, description, technologies, img, repo, demo }) => {
+            return (
+              <section
+                className='overflow-hidden rounded-lg  bg-slate-800 pb-5  transition-all hover:scale-105 dark:bg-slate-800'
+                key={id}
+              >
+                <img
+                  className='mx-auto mb-3 h-60 w-full rounded-t-md  object-cover  object-center'
+                  src={img}
+                  alt={title}
+                />
 
-              {/* <p>{technologies.join(" ")}</p> */}
+                <div className='px-6 '>
+                  <h3 className='mb-2 text-lg font-medium  text-indigo-400 '>
+                    {title}
+                  </h3>
+                  <p className=' mb-5 leading-relaxed  text-gray-200 sm:text-sm md:text-base'>
+                    {description}
+                  </p>
+                  <div className='flex flex-row flex-wrap justify-center gap-3 text-center   '>
+                    {technologies.map((technology, i) => {
+                      return (
+                        <span
+                          key={i}
+                          className=' rounded-md bg-gradient-to-r from-indigo-500  via-indigo-600 to-indigo-700 px-4 py-2 text-base text-gray-200 sm:text-sm md:text-base '
+                        >
+                          {technology}
+                        </span>
+                      )
+                    })}
+                  </div>
+                  <div className=' mt-5 flex h-auto items-center justify-between sm:flex-wrap md:flex-nowrap'>
+                    <a
+                      href={repo}
+                      target='_blank'
+                      className='  flex items-center rounded-md px-4 py-3 text-sm font-medium uppercase'
+                      rel='noreferrer'
+                    >
+                      <FaGithub className='mr-2' size={20} />
+                      Repository
+                    </a>
+                    <a
+                      href={demo}
+                      target='_blank'
+                      className=' flex items-center rounded-md px-4 py-3 text-sm font-medium uppercase'
+                      rel='noreferrer'
+                    >
+                      <FaInternetExplorer className='mr-2' size={20} />
+                      Website
+                    </a>
+                  </div>
+                </div>
 
-              {technologies.map(technologie => {
-                return (
-                  <span className='mx-4 text-gray-200 mr-2 text-base bg-gradient-to-r from-indigo-500 via-indigo-600 to-indigo-700 py-1 rounded-sm px-2'>
-                    {technologie}
-                  </span>
-                )
-              })}
-            </section>
-          )
-        })}
+                {/* <p>{technologies.join(" ")}</p> */}
+              </section>
+            )
+          }
+        )}
       </div>
 
       <a
         href='https://github.com/JorgeAssaf?tab=repositories'
         target='_blank'
-        className=' bg-indigo-500 my-7 p-4 md:text-base sm:text-sm flex md:flex-row mx-auto sm:flex-col md:w-96 h-auto rounded-md text-center md:justify-center'
+        className=' my-7 mx-auto flex h-auto rounded-md bg-indigo-500 p-4 text-center transition-colors hover:bg-indigo-700 sm:flex-col sm:text-base md:w-96 md:flex-row md:justify-center md:text-lg'
+        rel='noreferrer'
       >
         Mas proyectos en mi github!!
         <h4>
           {' '}
-          <FaGithub className='md:ml-4 md:mt-0 sm:mx-auto sm:mt-2 ' size={22} />
+          <FaGithub className=' sm:mx-auto sm:mt-2 md:mt-0 md:ml-4' size={22} />
         </h4>
       </a>
     </main>

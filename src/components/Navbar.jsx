@@ -4,20 +4,18 @@ import { HiOutlineMenuAlt4 } from 'react-icons/hi'
 
 const Navbar = ({ name, handleThemeSwitch, theme }) => {
   const [nav, setNav] = useState(false)
-  const [logo, setLogo] = useState(false)
   const handleNav = () => {
     setNav(!nav)
-    setLogo(!logo)
   }
   return (
     <div
       data-aos='fade-down'
-      className=' md:text-4xl mb-16 text-indigo-700 font-medium dark:text-indigo-500  '
+      className=' mb-16 font-medium text-indigo-700 dark:text-indigo-500 md:text-5xl '
     >
       <nav>
-        <header className='flex flex-row items-center justify-between  '>
+        <header className=' flex flex-row items-center justify-between '>
           <h2 className=' text-3xl'>{name}</h2>
-          <ul className='md:flex text-lg gap-4 list-none sm:hidden  '>
+          <ul className=' list-none gap-4 text-lg sm:hidden md:flex md:text-base'>
             <li>
               <a href='#'>Home</a>
             </li>
@@ -25,7 +23,7 @@ const Navbar = ({ name, handleThemeSwitch, theme }) => {
               <a href='#proyectos'>Proyectos</a>
             </li>
             <li>
-              <a href='#tecnologias'>Tecnologias</a>{' '}
+              <a href='#tecnologias'>Tecnologias</a>
             </li>
             <li>
               <a href='#contactame'>Contactame</a>
@@ -34,18 +32,20 @@ const Navbar = ({ name, handleThemeSwitch, theme }) => {
             {/* <li>🇪🇸</li> */}
             <li
               onClick={handleThemeSwitch}
-              className=' bg-indigo-500 rounded-lg px-0.5 py-0.5 cursor-pointer  '
+              className='cursor-pointer rounded-lg bg-indigo-500 px-0.5 py-0.5  '
             >
               {' '}
               {theme === 'dark' ? '🌙' : '🌞'}
             </li>
           </ul>
-          <div onClick={handleNav} className='md:hidden z-10'>
-            {nav ? (
-              <AiOutlineClose className='text-indigo-600' size={25} />
-            ) : (
-              <HiOutlineMenuAlt4 size={25} />
-            )}
+          <div onClick={handleNav} className='z-10 md:hidden'>
+            {nav
+              ? (
+                <AiOutlineClose className='text-indigo-600' size={25} />
+                )
+              : (
+                <HiOutlineMenuAlt4 size={25} />
+                )}
           </div>
         </header>
       </nav>
@@ -54,12 +54,11 @@ const Navbar = ({ name, handleThemeSwitch, theme }) => {
         onClick={handleNav}
         className={
           nav
-            ? 'transition absolute text-indigo-500 left-0 top-0 w-full bg-gray-800 max-h-screen flex flex-col mx-auto py-5 sm:px-[1.36rem]'
-            : 'transition absolute left-[-100%]'
+            ? 'absolute left-0 top-0 mx-auto flex max-h-screen w-full flex-col bg-gray-800 py-5 px-[1.5rem] text-indigo-500 transition'
+            : 'absolute left-[-100%] transition'
         }
       >
-        <h2 className='text-3xl mb-7'>{name}</h2>
-        <ul className='text-center text-white'>
+        <ul className='mt-6 text-center text-white'>
           <li className='mb-4'>
             <a href='#'>Home</a>
           </li>
@@ -76,10 +75,10 @@ const Navbar = ({ name, handleThemeSwitch, theme }) => {
           {/* <li className='mb-4'>🇪🇸</li> */}
           <li
             onClick={handleThemeSwitch}
-            className=' bg-indigo-500 rounded-lg px-0.5 py-0.5 cursor-pointer mb-5 '
+            className=' mx-auto mb-5 w-7/12 cursor-pointer rounded-lg bg-indigo-500 px-0.5 py-0.5'
           >
             {' '}
-            {theme === 'dark' ? '🌙' : '🌞'}
+            {theme === 'dark' ? '🌞' : '🌙'}
           </li>
         </ul>
       </div>
