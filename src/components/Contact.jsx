@@ -38,7 +38,7 @@ const Contact = () => {
   // e.target.reset()
 
   return (
-    <div className='my-7 mx-auto rounded-md bg-slate-800  font-medium text-white dark:bg-slate-800 dark:text-indigo-500 md:w-full lg:w-9/12  '>
+    <div id='contactame' className='my-7 mx-auto rounded-md bg-slate-800  font-medium text-white dark:bg-slate-800 dark:text-indigo-500 md:w-full lg:w-9/12  '>
       <Toaster position='top-right' reverseOrder={false} />
       <form
         ref={form}
