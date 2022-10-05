@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import { useEffect, useState } from 'preact/hooks'
 import {
   Contact,
@@ -5,16 +6,16 @@ import {
   HeroBanner,
   Navbar,
   Projects,
-  Technologies,
+  Technologies
 } from './components'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
 AOS.init({
-  delay: 100,
+  delay: 100
 })
 
-export function App() {
+export const App = () => {
   const logo = '<Assaf />'
   const [theme, setTheme] = useState('dark')
 
@@ -40,8 +41,8 @@ export function App() {
 
   return (
     <>
-      <div className='bg-white dark:bg-slate-900 min-h-screen font-inter text-white lg:[zoom:1.2] ult:[zoom:2.5] 5k:[zoom:4] '>
-        <div className=' max-w-9xl w-8/12 mx-auto py-5 sm:w-11/12 md:w-10/12'>
+      <div className='font-inter min-h-screen bg-white text-white dark:bg-slate-900 lg:[zoom:1.2] ult:[zoom:2.0] 5k:[zoom:4] '>
+        <div className='  max-w-9xl mx-auto w-8/12 py-5 sm:w-11/12 md:w-10/12'>
           <Navbar
             name={logo}
             handleThemeSwitch={handleThemeSwitch}
@@ -52,7 +53,7 @@ export function App() {
           <Projects />
           <Technologies />
           <Contact />
-          <Footer />
+          <Footer name={logo} />
         </div>
       </div>
     </>
