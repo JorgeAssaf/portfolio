@@ -7,7 +7,7 @@ const Services = () => {
       <h2 className='my-7 flex justify-center text-4xl font-medium text-indigo-700 dark:text-indigo-500  '>
         Servicios
       </h2>
-      <section className='bg mx-auto grid w-9/12 grid-cols-3 gap-2 text-center sm:flex sm:flex-col sm:gap-5 '>
+      <section className='bg mx-auto md:grid w-9/12 grid-cols-3 gap-2 text-center sm:flex sm:flex-col sm:gap-5 '>
         <article className='rounded-md bg-slate-800 px-2 '>
           <img className='mx-auto my-3 w-16 items-center' src={Code} alt='' />
           <h2>Desarrollo web</h2>
