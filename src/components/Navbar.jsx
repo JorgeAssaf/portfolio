@@ -10,26 +10,48 @@ const Navbar = ({ name, handleThemeSwitch, theme }) => {
   return (
     <div
       data-aos='fade-down'
-      className=' mb-16 font-medium text-indigo-700 dark:text-indigo-500 md:text-5xl '
+      className='  mb-16 font-medium text-indigo-700 dark:text-indigo-500 md:text-5xl '
     >
       <nav>
         <header className=' flex flex-row items-center justify-between '>
           <h2 className=' text-3xl'>{name}</h2>
-          <ul className=' list-none text-lg sm:hidden md:flex md:gap-2 md:text-base lg:gap-4'>
+          <ul className='  list-none text-lg sm:hidden md:flex md:gap-2 md:text-base lg:gap-4'>
             <li>
-              <a href='#'>Home</a>
+              <a className='transition-colors hover:text-indigo-300' href='#'>
+                Home
+              </a>
             </li>
             <li>
-              <a href='#proyectos'>Proyectos</a>
+              <a
+                className='transition-colors hover:text-indigo-300'
+                href='#proyectos'
+              >
+                Proyectos
+              </a>
             </li>
             <li>
-              <a href='#servicios'>Servicios</a>
+              <a
+                className='transition-colors hover:text-indigo-300'
+                href='#servicios'
+              >
+                Servicios
+              </a>
             </li>
             <li>
-              <a href='#tecnologias'>Tecnologias</a>
+              <a
+                className='transition-colors hover:text-indigo-300'
+                href='#tecnologias'
+              >
+                Tecnologias
+              </a>
             </li>
             <li>
-              <a href='#contactame'>Contactame</a>
+              <a
+                className='transition-colors hover:text-indigo-300'
+                href='#contactame'
+              >
+                Contactame
+              </a>
             </li>
             {/* //Todo Hacer la Internalización */}
             {/* <li>🇪🇸</li> */}
@@ -42,13 +64,11 @@ const Navbar = ({ name, handleThemeSwitch, theme }) => {
             </li>
           </ul>
           <div onClick={handleNav} className='z-10 md:hidden'>
-            {nav
-              ? (
-                <AiOutlineClose className='text-indigo-600' size={25} />
-                )
-              : (
-                <HiOutlineMenuAlt4 size={25} />
-                )}
+            {nav ? (
+              <AiOutlineClose className='text-indigo-600' size={25} />
+            ) : (
+              <HiOutlineMenuAlt4 size={25} />
+            )}
           </div>
         </header>
       </nav>
