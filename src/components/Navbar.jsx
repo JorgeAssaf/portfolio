@@ -15,12 +15,15 @@ const Navbar = ({ name, handleThemeSwitch, theme }) => {
       <nav>
         <header className=' flex flex-row items-center justify-between '>
           <h2 className=' text-3xl'>{name}</h2>
-          <ul className=' list-none gap-4 text-lg sm:hidden md:flex md:text-base'>
+          <ul className=' list-none text-lg sm:hidden md:flex md:gap-2 md:text-base lg:gap-4'>
             <li>
               <a href='#'>Home</a>
             </li>
             <li>
               <a href='#proyectos'>Proyectos</a>
+            </li>
+            <li>
+              <a href='#servicios'>Servicios</a>
             </li>
             <li>
               <a href='#tecnologias'>Tecnologias</a>
@@ -64,6 +67,9 @@ const Navbar = ({ name, handleThemeSwitch, theme }) => {
           </li>
           <li className='mb-4'>
             <a href='#proyectos'>Proyectos</a>
+          </li>
+          <li className='mb-4'>
+            <a href='#servicios'>Servicios</a>
           </li>
           <li className='mb-4'>
             <a href='#tecnologias'>Tecnologias</a>{' '}
