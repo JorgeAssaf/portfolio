@@ -3,10 +3,18 @@ import { FaGithub, FaInternetExplorer } from 'react-icons/fa'
 const Projects = () => {
   return (
     <main>
-      <h2 id='proyectos' className='my-7 flex justify-center text-4xl font-medium text-indigo-700 dark:text-indigo-500  '>
+      <h2
+        data-aos='fade-up'
+        id='proyectos'
+        className='my-7 flex justify-center text-4xl font-medium text-indigo-700 dark:text-indigo-500  '
+      >
         Proyectos
       </h2>
-      <div className='grid-cols-2 gap-5 sm:mx-auto sm:flex sm:w-9/12 sm:flex-col md:mx-auto md:grid md:w-11/12 lg:w-9/12'>
+      <div
+        data-aos='flip-up'
+        data-aos-duration='500'
+        className='grid-cols-2 gap-5 sm:mx-auto sm:flex sm:w-9/12 sm:flex-col md:mx-auto md:grid md:w-11/12 lg:w-9/12'
+      >
         {projects.map(
           ({ id, title, description, technologies, img, repo, demo }) => {
             return (
@@ -21,10 +29,10 @@ const Projects = () => {
                 />
 
                 <div className='px-6 '>
-                  <h3 className='mb-2 text-lg font-medium  text-indigo-400 '>
+                  <h3 className='mb-2 text-lg font-medium text-indigo-400 '>
                     {title}
                   </h3>
-                  <p className=' mb-5 leading-relaxed  text-gray-200 sm:text-sm md:text-base'>
+                  <p className=' mb-5 leading-relaxed text-gray-200 sm:text-sm md:text-base'>
                     {description}
                   </p>
                   <div className='flex flex-row flex-wrap justify-center gap-3 text-center   '>

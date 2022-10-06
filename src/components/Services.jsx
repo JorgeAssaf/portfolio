@@ -5,12 +5,18 @@ const Services = () => {
   return (
     <>
       <h2
+        data-aos='fade-left'
+        data-aos-duration='500'
         id='servicios'
         className='my-7 flex justify-center text-4xl font-medium text-indigo-700 dark:text-indigo-500  '
       >
         Servicios
       </h2>
-      <section className='bg mx-auto w-9/12 grid-cols-3 gap-2 text-center sm:flex sm:flex-col sm:gap-5 md:grid '>
+      <section
+        data-aos='flip-up'
+        data-aos-duration='550'
+        className='bg mx-auto w-9/12 grid-cols-3 gap-2 text-center sm:flex sm:flex-col sm:gap-5 md:grid '
+      >
         <article className='rounded-md bg-slate-800 px-2 '>
           <img className='mx-auto my-3 w-16 items-center' src={Code} alt='' />
           <h2>Desarrollo web</h2>
@@ -19,7 +25,11 @@ const Services = () => {
             sistema de gestión de contenidos (WordPress)
           </p>
         </article>
-        <article className='rounded-md bg-slate-800 px-2 '>
+        <article
+          data-aos='flip-up'
+          data-aos-duration='750'
+          className='rounded-md bg-slate-800 px-2 '
+        >
           <img
             className='mx-auto my-3 w-16 items-center'
             src={Responsive}
@@ -30,7 +40,11 @@ const Services = () => {
             Creación de diseños web, receptivos atractivos y responsivos.
           </p>
         </article>
-        <article className='rounded-md  bg-slate-800 px-2 '>
+        <article
+          data-aos='flip-up'
+          data-aos-duration='950'
+          className='rounded-md  bg-slate-800 px-2 '
+        >
           <img className='mx-auto my-3 w-16 items-center' src={Seo} alt='' />
           <h2>Seo y Optimizacion</h2>
           <p className='mt-3 mb-4 text-center text-sm text-gray-200'>

@@ -44,6 +44,8 @@ const Contact = () => {
     >
       <Toaster position='top-right' reverseOrder={false} />
       <form
+        data-aos='fade-up'
+        data-aos-duration='1500'
         ref={form}
         onSubmit={sendEmail}
         className='rounde mb-4 px-8 pt-6 pb-8 shadow-sm '
