@@ -14,7 +14,7 @@ const Services = () => {
       </h2>
       <section
         data-aos='flip-up'
-        data-aos-duration='550'
+        data-aos-duration='950'
         className='bg mx-auto w-9/12 grid-cols-3 gap-2 text-center sm:flex sm:flex-col sm:gap-5 md:grid '
       >
         <article className='rounded-md bg-slate-800 px-2 '>
@@ -27,7 +27,7 @@ const Services = () => {
         </article>
         <article
           data-aos='flip-up'
-          data-aos-duration='750'
+          data-aos-duration='1150'
           className='rounded-md bg-slate-800 px-2 '
         >
           <img
@@ -42,7 +42,7 @@ const Services = () => {
         </article>
         <article
           data-aos='flip-up'
-          data-aos-duration='950'
+          data-aos-duration='1350'
           className='rounded-md  bg-slate-800 px-2 '
         >
           <img className='mx-auto my-3 w-16 items-center' src={Seo} alt='' />

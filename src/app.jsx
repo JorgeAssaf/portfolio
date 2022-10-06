@@ -13,7 +13,7 @@ import AOS from 'aos'
 import 'aos/dist/aos.css'
 
 AOS.init({
-  delay: 100
+  delay: 150
 })
 
 export const App = () => {

@@ -5,6 +5,7 @@ const Projects = () => {
     <main>
       <h2
         data-aos='fade-up'
+        data-aos-duration='700'
         id='proyectos'
         className='my-7 flex justify-center text-4xl font-medium text-indigo-700 dark:text-indigo-500  '
       >
@@ -12,7 +13,7 @@ const Projects = () => {
       </h2>
       <div
         data-aos='flip-up'
-        data-aos-duration='500'
+        data-aos-duration='700'
         className='grid-cols-2 gap-5 sm:mx-auto sm:flex sm:w-9/12 sm:flex-col md:mx-auto md:grid md:w-11/12 lg:w-9/12'
       >
         {projects.map(

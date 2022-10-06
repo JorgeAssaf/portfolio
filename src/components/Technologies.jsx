@@ -10,7 +10,7 @@ const Technologies = () => {
       </h2>
       <div
         data-aos='flip-down'
-        data-aos-duration='600'
+        data-aos-duration='1000'
         className=' grid-cols-2 sm:flex sm:flex-col md:mx-auto md:grid md:w-9/12 md:gap-10  '
       >
         {technologies.map((technology) => {
