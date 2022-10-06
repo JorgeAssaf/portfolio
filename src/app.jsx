@@ -6,6 +6,7 @@ import {
   HeroBanner,
   Navbar,
   Projects,
+  Services,
   Technologies
 } from './components'
 import AOS from 'aos'
@@ -51,6 +52,7 @@ export const App = () => {
           <HeroBanner />
           {/* <h2 className='text-4xl mb-6 flex justify-center'>Cooming soon!!!</h2> */}
           <Projects />
+          <Services />
           <Technologies />
           <Contact />
           <Footer name={logo} />
