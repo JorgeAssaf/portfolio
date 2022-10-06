@@ -42,7 +42,7 @@ export const App = () => {
 
   return (
     <>
-      <div className='font-inter min-h-screen bg-white text-white dark:bg-slate-900 lg:[zoom:1.2] ult:[zoom:2.0] 5k:[zoom:4] '>
+      <div className='overflow-x-hidden font-inter min-h-screen bg-white text-white dark:bg-slate-900 lg:[zoom:1.2] ult:[zoom:2.0] 5k:[zoom:4] '>
         <div className='  max-w-9xl mx-auto w-8/12 py-5 sm:w-11/12 md:w-10/12'>
           <Navbar
             name={logo}
