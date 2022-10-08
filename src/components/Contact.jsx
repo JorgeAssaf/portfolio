@@ -1,6 +1,7 @@
 import { useRef } from 'preact/hooks'
 import emailjs from '@emailjs/browser'
 import toast, { Toaster } from 'react-hot-toast'
+console.log(import.meta.env.VITE_EMAIL_ID)
 const Contact = () => {
   const form = useRef()
 
@@ -9,10 +10,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        'service_y110txh',
-        'template_9gu0i1h',
+        import.meta.env.VITE_EMAIL_SERVICE,
+        import.meta.env.VITE_EMAIL_TEMPLATE,
         form.current,
-        '7uVZRRLf9AKrNuF4t'
+        import.meta.env.VITE_EMAIL_ID
       )
       .then(
         (result) => {
