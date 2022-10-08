@@ -1,6 +1,6 @@
 const HeroBanner = () => {
   return (
-    <div className='text-left text-xl sm:mx-auto sm:w-full sm:text-left sm:text-[0.9rem] sm:leading-6 md:ml-1.5 md:w-[100%] '>
+    <div className='text-left text-xl sm:mx-auto sm:w-full sm:text-left sm:text-[0.9rem] sm:leading-6 md:ml-1.5 md:w-full '>
       <section className=' flex sm:flex-col md:flex md:items-center'>
         <article className=' font-medium text-black dark:text-white md:mb-7 lg:max-w-2xl'>
           <h1
