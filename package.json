@@ -9,36 +9,25 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@emailjs/browser": "^3.7.0",
+    "@emailjs/browser": "3.7.0",
     "aos": "3.0.0-beta.6",
-    "preact": "10.11.0",
-    "react-hot-toast": "^2.4.0",
-    "react-icons": "4.4.0"
+    "preact": "10.11.2",
+    "react-hot-toast": "2.4.0",
+    "react-icons": "4.6.0"
   },
   "devDependencies": {
     "@preact/preset-vite": "2.4.0",
     "autoprefixer": "10.4.12",
-    "postcss": "8.4.17",
+    "postcss": "8.4.18",
     "prettier": "2.7.1",
     "prettier-plugin-tailwindcss": "0.1.13",
     "standard": "17.0.0",
     "tailwindcss": "3.1.8",
-    "vite": "3.1.4"
+    "vite": "3.1.8"
   },
   "eslintConfig": {
     "extends": [
       "./node_modules/standard/eslintrc.json"
     ]
-  },
-  "prettier": {
-    "plugins": [
-      "./node_modules/prettier-plugin-tailwindcss"
-    ],
-    "singleQuote": true,
-    "semi": false,
-    "jsxSingleQuote": true,
-    "editorconfig": true,
-    "trailingComma": "none"
-    
   }
 }
