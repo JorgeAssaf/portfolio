@@ -39,7 +39,7 @@ const HeroBanner = () => {
         <a
           data-aos='fade-down'
           className=' mx-0 mt-10 mb-7 rounded-lg bg-gradient-to-r from-indigo-500 via-indigo-600 to-indigo-700 py-3 px-8 text-base font-[500] transition-colors hover:from-indigo-800 hover:to-indigo-800'
-          href='https://files.fm/down.php?i=vvuw9dxbr'
+          href='https://files.fm/down.php?i=csgjg936p'
           download='Cv_Assaf.pdf'
         >
           Descarga mi CV
